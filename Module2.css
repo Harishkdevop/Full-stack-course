@@ -1,0 +1,129 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container-main{
+    
+    display: flex;
+    /* width: 100%; */
+    flex-direction: column;
+    background-image: url(./Assets/Barcafe.jpg);
+    color: beige;
+    align-items: center;
+    padding-top: 20px;
+    background-repeat: no-repeat;
+}
+.row-1{
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+    /* align-items: center; */
+    padding: 10px;
+    gap: 20px;
+    
+    
+    
+}
+
+.row-1-col{
+    display: flex;
+    flex-direction: column;
+    
+    /* align-items: center; */
+    padding: 10px;
+    gap: 20px;
+    
+
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    color: black;
+    padding: 10px;
+    flex: 20%;
+    row-gap: 6px;
+    
+
+    
+}
+
+.col-md-7{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+
+    background-color: beige;
+    color: black;
+    padding: 10px;
+    flex: 20%;
+    
+
+}
+
+.col-md-8{
+    background-color: burlywood;
+    color: black;
+    padding: 10px;
+    flex: 20%;
+    
+}
+
+
+.padding-div{
+    /* padding-left: 316px; */
+    display: flex;
+    justify-content: end;
+}
+
+.col-head{
+    
+    width: fit-content;
+    background-color: black;
+    /* display: flex; */
+    border: 1px solid rgb(255, 255, 255);
+    text-align: end;
+    padding-right: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+ 
+}
+
+
+/* Media Query- desktop, tablet , mobile */
+
+@media only screen and (min-width:992px) {
+    .col-md-6 .col-md-7 .col-md-8{
+        flex: 50%;
+    }
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 .col-md-7  {
+      flex: 50%;
+    }
+
+    .col-md-8{
+        flex: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 767px){
+    
+    .row-1{
+        flex-direction: column;
+    }
+    .col-md-6 .col-md-7 .col-md-8{
+        flex: 100%;
+    }
+
+  }
+
+
+
